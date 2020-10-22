@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  border: 10px solid goldenrod;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box1 {
+  background: aqua;
+}
+.box2 {
+  background: azure;
+}
+.box3 {
+  background: rgb(126, 126, 170);
+}
+.box4 {
+  background: green;
+}
+.box5 {
+  background: rgb(190, 164, 179);
+}
+.box6 {
+  background: yellowgreen;
+}
+.box7 {
+  background: khaki;
+}
+.box8 {
+  background: olive;
+}
+.box9 {
+  background: salmon;
+}
+.box10 {
+  background: navajowhite;
+}
+
+.box {
+  color: white;
+  font-size: 100px;
+  padding: 10px;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}

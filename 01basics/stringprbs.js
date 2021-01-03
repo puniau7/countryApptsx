@@ -22,8 +22,22 @@
 // foo1();
 // console.log(i);
 
-let arr = [1, 3, 2, 4, 4, 2, "a", "b", "a"];
-const map = arr.reduce((acc, curr) => {
-  return acc.set(curr, (acc.get(curr) || 0) + 1);
-}, new Map());
-console.log(map);
+// let arr = [1, 3, 2, 4, 4, 2, "a", "b", "a"];
+// const map = arr.reduce((acc, curr) => {
+//   return acc.set(curr, (acc.get(curr) || 0) + 1);
+// }, new Map());
+// console.log(map);
+
+var firstUniqChar = function (s) {
+  let temp = s;
+  let temp1 = "";
+  for (let i = 0; i < s.length; i++) {
+    temp1 = temp.slice(i + 1, temp.length);
+    console.log("temp1", temp1);
+    if (!temp1.includes(temp.charAt(i))) {
+      console.log("inside if");
+      return temp.charAt(i);
+    }
+  }
+};
+console.log(firstUniqChar("shas"));
